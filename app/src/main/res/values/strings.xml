@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">BoardKT</string>
+    <string name="add_task">Adicionar Tarefa</string>
+    <string name="deadline">Data Limite: %1$s</string>
+    <string name="title">Título</string>
+    <string name="description">Descrição</string>
+    <string name="select_date">Selecionar Data</string>
+    <string name="select_time">Selecionar Hora</string>
+    <string name="save">Salvar</string>
+    <string name="required_field">Campo obrigatório</string>
+    <string name="sort_by">Ordenar por</string>
+    <string name="sort_by_deadline">Ordenar por Data limite</string>
+    <string name="sort_by_creation">Ordenar por Data de Criação</string>
+    <string name="edit_task">Editar Tarefa</string>
+    <string name="task_options">Opções da Tarefa</string>
+    <string name="delete_task">Excluir Tarefa</string>
+    <string name="delete_task_confirmation">Tem certeza que deseja excluir esta tarefa?</string>
+    <string name="yes">Sim</string>
+    <string name="no">Não</string>
+    <string name="no_date_selected">Nenhuma data selecionada</string>
+    <string name="select_date_time">Selecionar Data e Hora</string>
+    <string name="status_on_time">Em Tempo</string>
+    <string name="status_overdue">Atrasada</string>
+    <string name="status_today">Hoje!</string>
+    <string name="header_pending_tasks">Tarefas Pendentes</string>
+    <string name="header_completed_tasks">Tarefas Concluídas</string>
+    <string name="status_completed">Concluída</string>
+    <string name="search">Pesquisar</string>
+    <string name="search_hint">Pesquisar tarefas</string>
+    <string name="task_notification_text">Tarefa \"%1$s\" vence em %2$s minutos</string>
+    <string name="task_notification_title">Lembrete de Tarefa</string>
+    <string name="task_notification_channel_name">Task Reminders</string>
+    <string name="task_notification_channel_desc">Notifications for upcoming tasks</string>
+    <string name="task_completed_badge_text">Concluída</string>
+</resources>
