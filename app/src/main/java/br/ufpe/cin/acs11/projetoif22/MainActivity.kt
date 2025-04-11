@@ -110,8 +110,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun updateTaskList(tasks: List<Task>) {
-        val sectionsWithHeaders = tasks.groupBy { it.isCompleted }.flatMap { (isCompleted, taskList) ->
-            if (taskList.isEmpty()) {
+        val sectionsWithHeaders = tasks.groupBy { it.isCompleted }.toSortedMap().flatMap { (isCompleted, taskList) ->
+            if (taskList.isNotEmpty()) {
                 val header = if (isCompleted) getString(R.string.header_completed_tasks) else getString(R.string.header_pending_tasks)
                 listOf(TaskListElement.Header(header)) + taskList.map { TaskListElement.TaskItem(it) }
             }

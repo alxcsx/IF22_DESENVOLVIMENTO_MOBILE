@@ -94,10 +94,13 @@ class TaskAdapter(
             holder.taskTitle.paintFlags = holder.taskTitle.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
             holder.taskDescription.paintFlags = holder.taskDescription.paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
             holder.editButton.isEnabled = false;
+            holder.editButton.visibility = View.INVISIBLE;
+
         } else {
             holder.taskTitle.paintFlags = holder.taskTitle.paintFlags and Paint.STRIKE_THRU_TEXT_FLAG.inv()
             holder.taskDescription.paintFlags = holder.taskDescription.paintFlags and Paint.STRIKE_THRU_TEXT_FLAG.inv()
             holder.editButton.isEnabled = true;
+            holder.editButton.visibility = View.VISIBLE;
         }
 
         holder.taskDescription.text = task.description
